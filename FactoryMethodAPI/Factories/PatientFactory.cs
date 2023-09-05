@@ -5,8 +5,22 @@ namespace FactoryMethodAPI.Factories
 {
     public class PatientFactory
     {
-        switch case
-        public static IinPatient GetPatientInfo(bool Surgery)
+
+        //public static IinPatient Pfactory()
+        //{
+        //    string patienttype = "GetInPatientInfo";
+        //    switch (patienttype)
+        //    {
+        //        case "GetInPatientInfo":
+        //            return inptnt;
+            
+        //    }
+
+        //    return IinPatient;
+        //}
+            
+
+        public static IinPatient GetInPatientInfo(bool Surgery)
         {
             IinPatient inptnt = null;
 
@@ -14,6 +28,9 @@ namespace FactoryMethodAPI.Factories
             inptnt.NeedSurgery(Surgery);
 
             return inptnt;
+
+
+
         }
 
         public static IoutPatient GetOutPatientInfo(bool Casuality)
